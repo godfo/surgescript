@@ -1,5 +1,5 @@
 /*
-http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=https://github.com/ximigami/surgescript/raw/master/manly.js,script-update-interval=0
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=https://github.com/wubulaba/surgescript/raw/master/manly.js,script-update-interval=0
 */
 
 var obj = JSON.parse($response.body);
