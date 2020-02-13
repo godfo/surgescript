@@ -1,4 +1,6 @@
-
+/*
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=-1,script-path=https://github.com/ximigami/surgescript/raw/master/manly.js,script-update-interval=0
+*/
 var obj = JSON.parse($response.body);
 var bundle_id = obj.receipt["bundle_id"];
 if (bundle_id == "com.alphatech.manly") {
