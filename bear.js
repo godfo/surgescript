@@ -1,5 +1,5 @@
 /*
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body JS/bear.js
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=0,script-path=https://github.com/ximigami/surgescript/raw/master/bear.js,script-update-interval=0
 */
 
 var obj = JSON.parse($response.body);
