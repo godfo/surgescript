@@ -1,0 +1,2 @@
+# surgescript
+自用
