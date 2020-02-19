@@ -1,3 +1,0 @@
-// MangaRen
-URL-REGEX,^http?:\/\/mangaapi\.manhuaren\.com\/v\d\/(manga|search), Proxy
-URL-REGEX,^http?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds, Reject
