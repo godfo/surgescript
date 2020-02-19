@@ -1,4 +1,10 @@
 /*
+人人视频去广告解锁原画
+
+[MITM]
+hostname = api.rr.tv
+
+[Script]
 http-response ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
 */
 
