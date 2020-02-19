@@ -5,7 +5,7 @@
 ^http:\/\/115\.com\/\?ct=sign$ http://115.com/lx?taskdg=1 header
 
 [MITM]
-hostname = *.115.com
+hostname = webapi.115.com
 
 [Script]
 http-response ^http:\/\/115\.com\/lx.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
