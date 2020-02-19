@@ -1,7 +1,7 @@
 # 自用Surge Scripts
 MITM
 ```
-Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, buy.itunes.apple.com, api.rr.tv, api.diyidan.net, account.wps.com, account.wps.cn
+Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, buy.itunes.apple.com, api.rr.tv, account.wps.com, account.wps.cn
 ```
 B站知乎去广告 by onewayticket255
 ```
@@ -35,10 +35,6 @@ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1
 人人视频解锁原画
 ```
 http-response ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
-```
-第一弹去广告解锁原画
-```
-http-response ^https?:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Diyidan.js,script-update-interval=0
 ```
 WPS国内版/国际版 by eHpo1
 ```
