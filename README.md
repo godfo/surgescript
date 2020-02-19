@@ -1,8 +1,8 @@
 
 自用Surge Scripts
-
+```
 Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.zhihu.com, buy.itunes.apple.com
-
+```
 哔哩哔哩APP
 ```
 http-response ^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/(mine|teenagers\/status)|view|feed\/index|show\/popular\/index|rank)|app-room/v1/index/getInfoByRoom)\?access_key requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bilibili.js,script-update-interval=0
