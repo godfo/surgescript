@@ -2,10 +2,10 @@
 WPS国际版&大陆版
 
 [MITM]
-hostname = account.wps.com, account.wps.cn
+hostname = account.wps.co, account.wps.cn
 
 [Script]
-http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js
+http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/Wps.js
 */
 
 var obj = JSON.parse($response.body);
