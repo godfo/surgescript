@@ -59,7 +59,7 @@ hostname = account.wps.co, account.wps.cn
 [Script]
 http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
 ```
-新版115的App添加创建离线任务
+新版115的App添加创建离线任务 by ikanam
 ```
 [URL Rewrite]
 ^http:\/\/115\.com\/\?ct=sign$ http://115.com/lx?taskdg=1 header
