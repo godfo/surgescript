@@ -1,14 +1,17 @@
 /*
-使用方法：
-注意：该脚本无破解离线功能,只是给新版115的App添加创建离线任务的方法。
-1.在[Script]分组下添加下面这行配置
-http-response ^http:\/\/115\.com\/lx.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ikanam/Surge-Scripts/master/115lx.js,script-update-interval=0
-http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/ikanam/Surge-Scripts/master/115lx.js,script-update-interval=0
-2.[MITM]分组添加hostname = *.115.com
-3.在115Aapp中通过网页打开http://115.com/lx?taskdg=1(可在记录中保存该地址打开, 也可添加下面的配置将首页的签到按钮跳转重定向到离线下载页面)
+新版115的App添加创建离线任务
+
 [URL Rewrite]
 ^http:\/\/115\.com\/\?ct=sign$ http://115.com/lx?taskdg=1 header
-4.快速创建下载任务的快捷指令: https://www.icloud.com/shortcuts/31e3a877cec340a48192aa081e25c05e
+
+[MITM]
+hostname = *.115.com
+
+[Script]
+http-response ^http:\/\/115\.com\/lx.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
+http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
+
+快速创建下载任务的快捷指令: https://www.icloud.com/shortcuts/31e3a877cec340a48192aa081e25c05e
 */
 
 var body = $response.body;
