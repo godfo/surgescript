@@ -186,43 +186,35 @@ if (url.indexOf(path10) != -1) {
 if (url.indexOf(path11) != -1) {
   body['data']['ipad_upper_sections'] = [{
       "title": "投稿",
-      "icon": "http://i0.hdslb.com/bfs/archive/86a8fdc40f4a5842d9b6454dead1f049db64ffc5.png",
       "uri": "/uper/user_center/add_archive"
     },
     {
       "title": "创作中心",
-      "icon": "http://i0.hdslb.com/bfs/archive/f4da9a7940d29f6b01676b039f685053f77615fd.png",
       "uri": "/uper/homevc"
     },
     {
       "title": "稿件管理",
-      "icon": "http://i0.hdslb.com/bfs/archive/eec4a9f65dad19b5e92130d236ba3bf46248309e.png",
       "uri": "/uper/user_center/archive_list"
     }
   ];
   body['data']['ipad_sections'] = [{
       "title": "历史记录",
-      "icon": "http://i0.hdslb.com/bfs/archive/cdfb36f4835f3f09f8c9d2fef20c025c84d96a66.png",
       "uri": "bilibili://user_center/history"
     },
     {
       "title": "我的收藏",
-      "icon": "http://i0.hdslb.com/bfs/archive/a1a5aa50956e0c7d75f6f89bb4b93da340bf4a0d.png",
       "uri": "bilibili://user_center/favourite"
     },
     {
       "title": "稍后再看",
-      "icon": "http://i0.hdslb.com/bfs/archive/3fa793dda7a6236d03cf0dec8507bbffe1d4e8ae.png",
       "uri": "bilibili://user_center/watch_later"
     },
     {
       "title": "我的消息",
-      "icon": "http://i0.hdslb.com/bfs/archive/b2b4e1c010ea57cfe600c312b11c2909d77b46f1.png",
       "uri": "bilibili://link/im_home"
     },
     {
       "title": "设置",
-      "icon": "http://i0.hdslb.com/bfs/archive/3aa6fa00d4718be2a9a4f0c608ea04ddb7407d15.png",
       "uri": "bilibili://user_center/setting"
     }
   ]
