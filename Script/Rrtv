@@ -1,5 +1,5 @@
 /*
-^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) url script-response-body rrtv.js
+^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) url script-response-body https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv
 */
 
 var body = $response.body;
