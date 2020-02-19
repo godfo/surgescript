@@ -37,6 +37,6 @@ http-response ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requ
 ```
 WPS国内版/国际版 by eHpo1
 ```
-http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/Wps.js,script-update-interval=0
+http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
 ```
 
