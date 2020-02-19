@@ -1,7 +1,7 @@
 # 自用Surge Scripts
 MITM
 ```
-Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, buy.itunes.apple.com, api.rr.tv, account.wps.com, account.wps.cn
+Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, buy.itunes.apple.com, api.rr.tv, account.wps.com, account.wps.cn, webapi.115.com
 ```
 B站知乎去广告 by onewayticket255
 ```
@@ -40,4 +40,17 @@ WPS国内版/国际版 by eHpo1
 ```
 http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
 ```
+新版115的App添加创建离线任务
+```
+[URL Rewrite]
+^http:\/\/115\.com\/\?ct=sign$ http://115.com/lx?taskdg=1 header
 
+[MITM]
+hostname = *.115.com
+
+[Script]
+http-response ^http:\/\/115\.com\/lx.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
+http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
+
+快速创建下载任务的快捷指令: https://www.icloud.com/shortcuts/31e3a877cec340a48192aa081e25c05e
+```
