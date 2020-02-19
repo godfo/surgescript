@@ -27,7 +27,7 @@ Manly修图工具Unlock by 越南老哥
 ```
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Manly.js,script-update-interval=0
 ```
-Bears笔记本Pro by 越南老哥
+Bear笔记本Pro by 越南老哥
 ```
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bear.js,script-update-interval=0
 ```
