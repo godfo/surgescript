@@ -73,3 +73,8 @@ http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,
 
 快速创建下载任务的快捷指令: https://www.icloud.com/shortcuts/31e3a877cec340a48192aa081e25c05e
 ```
+提取115中的视频使用nPlayer进行播放 by ikanam
+```
+[Script]
+http-request ^http:\/\/.*\.115\.com\/.*\.m3u8.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115tonplayer.js,script-update-interval=0
+```
