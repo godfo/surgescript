@@ -2,7 +2,7 @@
 ```
 Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, buy.itunes.apple.com, api.rr.tv
 ```
-广告 by onewayticket255
+去广告 by onewayticket255
 ```
 //ZhiHu
 USER-AGENT,AVOS*,REJECT-TINYGIF
