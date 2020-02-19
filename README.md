@@ -1,6 +1,6 @@
 自用Surge Scripts😶
 ```
-Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.zhihu.com, buy.itunes.apple.com, api.rr.tv
+Hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, buy.itunes.apple.com, api.rr.tv
 ```
 广告
 ```
