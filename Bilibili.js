@@ -177,7 +177,6 @@ if (url.indexOf(path9) != -1) {
 if (url.indexOf(path10) != -1) {
   body['data']['teenagers_status'] = 0;
 }
-}
 
 $done({
   body: JSON.stringify(body)
