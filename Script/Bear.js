@@ -1,4 +1,10 @@
 /*
+Bears笔记
+
+[MITM]
+hostname = buy.itunes.apple.com
+
+[Script]
 http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bear.js,script-update-interval=0
 */
 
