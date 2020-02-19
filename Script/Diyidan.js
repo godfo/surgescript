@@ -5,7 +5,7 @@
 hostname = api.diyidan.net
 
 [Script]
-^https:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Diyidan.js,script-update-interval=0
+http-response ^https?:\/\/api\.diyidan\.net\/v0\.3\/(user\/personal_homepage|vip_user\/info|tv_series\/index\?appChanne) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Diyidan.js,script-update-interval=0
 */
 
 let url = $request.url;
