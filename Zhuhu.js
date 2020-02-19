@@ -1,3 +1,7 @@
+/*
+http-response ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Zhuhu.js
+*/
+
 const path1 = "/moments?";
 const path2 = "/topstory/recommend";
 const path3 = "/questions/";
