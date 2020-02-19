@@ -5,7 +5,7 @@ WPS国际版&大陆版
 hostname = account.wps.co, account.wps.cn
 
 [Script]
-http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/Wps.js
+http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
 */
 
 var obj = JSON.parse($response.body);
