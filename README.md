@@ -35,3 +35,7 @@ http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,
 ```
 ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
 ```
+WPS国内版/国际版
+```
+http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/eHpo1/Surge/master/Script/wps.js,script-update-interval=0
+```
