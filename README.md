@@ -21,7 +21,7 @@ http-response ^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/sho
 ```
 知乎APP去广告简化
 ```
-http-response ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhuhu.js,script-update-interval=0
+http-response ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0
 ```
 Manly修图工具Unlock
 ```
