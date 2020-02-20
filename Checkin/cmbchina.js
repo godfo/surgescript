@@ -5,8 +5,8 @@
 hostname = weclub.ccc.cmbchina.com
 
 [Script]
-cron "0 7 * * *" 
-http-request https://weclub\.ccc\.cmbchina.com/SCRMCustomActivityFront/checkin/request/get-home-data\.json\?activityCode=checkin script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115tonplayer.js,script-update-interval=0
+cron "0 7 * * *" script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Checkin/cmbchina.js
+http-request https://weclub\.ccc\.cmbchina.com/SCRMCustomActivityFront/checkin/request/get-home-data\.json\?activityCode=checkin script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Checkin/cmbchina.js,script-update-interval=0
 */
 
 const checkinURL = 'https://weclub.ccc.cmbchina.com/SCRMCustomActivityFront/checkin/request/checkin.json';
