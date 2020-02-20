@@ -78,3 +78,13 @@ http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,
 [Script]
 http-request ^http:\/\/.*\.115\.com\/.*\.m3u8.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115tonplayer.js,script-update-interval=0
 ```
+
+招商银行信用卡微信公众号签到
+```
+[MITM]
+hostname = weclub.ccc.cmbchina.com
+
+[Script]
+cron "0 7 * * *" script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Checkin/cmbchina.js
+http-request https://weclub\.ccc\.cmbchina.com/SCRMCustomActivityFront/checkin/request/get-home-data\.json\?activityCode=checkin script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Checkin/cmbchina.js,script-update-interval=0
+```
