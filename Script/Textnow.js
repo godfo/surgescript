@@ -1,5 +1,5 @@
 /*
-#Textnow去广告
+Textnow去广告
 
 [MITM]
 hostname = api.textnow.me
