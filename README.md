@@ -11,7 +11,7 @@ AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFF
 hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com
 
 [Script]
-http-response ^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/(mine|teenagers\/status)|view|feed\/index|show\/popular\/index|rank)|app-room/v1/index/getInfoByRoom)\?access_key requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bilibili.js,script-update-interval=0
+http-response ^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/(mine|teenagers\/status)|view|feed\/index|show\/popular\/index|rank)|app-room/v1/index/getInfoByRoom)\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bilibili.js,script-update-interval=0
 ```
 知乎APP去广告简化 by onewayticket255 & primovist
 ```
@@ -25,7 +25,7 @@ AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFI
 hostname = www.zhihu.com, api.zhihu.com
 
 [Script]
-http-response ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0
+http-response ^https?:\/\/api\.zhihu\.com\/(moments\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0
 ```
 Manly修图工具Unlock by 越南老哥
 ```
@@ -33,7 +33,7 @@ Manly修图工具Unlock by 越南老哥
 hostname = buy.itunes.apple.com
 
 [Script]
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Manly.js,script-update-interval=0
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Manly.js,script-update-interval=0
 ```
 Bear笔记本Pro by 越南老哥
 ```
@@ -41,7 +41,7 @@ Bear笔记本Pro by 越南老哥
 hostname = buy.itunes.apple.com
 
 [Script]
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bear.js,script-update-interval=0
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bear.js,script-update-interval=0
 ```
 人人视频解锁原画
 ```
@@ -49,7 +49,7 @@ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1
 hostname = api.rr.tv
 
 [Script]
-http-response ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
+http-response ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
 ```
 WPS国内版/国际版 by eHpo1
 ```
@@ -57,7 +57,7 @@ WPS国内版/国际版 by eHpo1
 hostname = account.wps.co, account.wps.cn
 
 [Script]
-http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
+http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
 ```
 新版115的App添加创建离线任务 by ikanam
 ```
@@ -68,7 +68,7 @@ http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max
 hostname = webapi.115.com
 
 [Script]
-http-response ^http:\/\/115\.com\/lx.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
+http-response ^http:\/\/115\.com\/lx.*$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
 http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
 
 快速创建下载任务的快捷指令: https://www.icloud.com/shortcuts/31e3a877cec340a48192aa081e25c05e
@@ -76,6 +76,13 @@ http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,
 提取115中的视频使用nPlayer进行播放 by ikanam
 ```
 [Script]
-http-request ^http:\/\/.*\.115\.com\/.*\.m3u8.*$ requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115tonplayer.js,script-update-interval=0
+http-request ^http:\/\/.*\.115\.com\/.*\.m3u8.*$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115tonplayer.js,script-update-interval=0
 ```
+Textnow去广告
+```
+[MITM]
+hostname = api.textnow.me
 
+[Script]
+http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Textnow.js,script-update-interval=0
+```
