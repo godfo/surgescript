@@ -1,6 +1,6 @@
 # 自用Surge Scripts
 
-哔哩哔哩APP去广告简化+解锁大会员番剧 by onewayticket255 & primovist
+哔哩哔哩APP去广告简化 by onewayticket255 & primovist 解锁大会员番剧 by @maoring
 ```
 [Rule]
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT-TINYGIF
