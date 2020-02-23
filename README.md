@@ -78,7 +78,7 @@ http-response ^https?:\/\/webapi\.115\.com\/user\/check_sign.*$ requires-body=1,
 [Script]
 http-request ^http:\/\/.*\.115\.com\/.*\.m3u8.*$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115tonplayer.js,script-update-interval=0
 ```
-Textnow去广告
+Textnow去广告 by loric729
 ```
 [MITM]
 hostname = api.textnow.me
