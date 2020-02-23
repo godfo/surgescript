@@ -1,10 +1,13 @@
 /*
-Bilibili简化去广告
+Bilibili简化去广告+大会员
 
 [Rule]
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT-TINYGIF
 URL-REGEX,https://api.bilibili.com/x/v2/dm/advert,REJECT-TINYGIF
-AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFFIX,hdslb.com)))),REJECT-TINYGIF
+
+[URL Rewrite]
+^https://api.bilibili.com/pgc/view/app/season http://api.bili.best:22333/season/ 302
+^https://api.bilibili.com/pgc/player/api/playurl http://api.bili.best:22333/geturl/ 302
 
 [MITM]
 hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com
