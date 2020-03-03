@@ -89,8 +89,10 @@ http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* requires-body=1,max
 ```
 [Rule]
 URL-REGEX,^https://weibointl.api.weibo.cn/portal.php\?a=get_coopen_ads,REJECT-TINYGIF
+
 [MITM]
 hostname = weibointl.api.weibo.cn, api.weibo.cn
+
 [Script]
 http-response ^https?:\/\/api\.weibo\.cn\/2\/(statuses|groups)\/(unread_hot_|friends_)?timeline requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/WeiboInt.js,script-update-interval=0
 ```
