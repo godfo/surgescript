@@ -42,7 +42,7 @@ hostname = buy.itunes.apple.com
 [Script]
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bear.js,script-update-interval=0
 ```
-人人视频解锁原画
+人人视频解锁原画+电影分区解锁
 ```
 [MITM]
 hostname = api.rr.tv
