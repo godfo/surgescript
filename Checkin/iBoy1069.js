@@ -16,7 +16,7 @@ cron "0 0 7 * * *" script-path=https://raw.githubusercontent.com/wubulaba/surges
 */
 
 var bonus = {
-  url: 'https://iboy1069.com/plugin.php?id=k_misign:sign&operation=qiandao&format=text&formhash=cd211d82',
+  url: 'https://iboy1069.com/plugin.php?id=k_misign:sign&operation=qiandao&format=text&formhash=29b039f9',
   headers: {
     Cookie: $persistentStore.read("CookieIB"),
   }
