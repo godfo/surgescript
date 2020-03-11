@@ -141,28 +141,19 @@ if (url.indexOf(path3) != -1) {
     "title": "个人中心",
     "items": [{
         "title": "历史记录",
-        "icon": "http://i0.hdslb.com/bfs/archive/ae502b4b69b6a3b287ea59b1552859332e59c277.png",
-        "uri": "bilibili://user_center/history"
+       "uri": "bilibili://user_center/history"
       },
       {
         "title": "我的收藏",
-        "icon": "http://i0.hdslb.com/bfs/archive/1e6b0583257a086f40779c10ad7e2fcd72984463.png",
         "uri": "bilibili://user_center/favourite"
       },
       {
         "title": "稍后再看",
-        "icon": "http://i0.hdslb.com/bfs/archive/56893a05f41d7c503f7f1f5b67e9ee2add8581fa.png",
         "uri": "bilibili://user_center/watch_later"
       },
       {
-        "title": "创作首页",
-        "icon": "http://i0.hdslb.com/bfs/archive/d3aad2d07538d2d43805f1fa14a412d7a45cc861.png",
-        "uri": "bilibili://uper/homevc"
-      },
-      {
-        "title": "投稿",
-        "icon": "http://i0.hdslb.com/bfs/archive/86a8fdc40f4a5842d9b6454dead1f049db64ffc5.png",
-        "uri": "/uper/user_center/add_archive"
+        "title": "离线缓存",
+        "uri": "bilibili://user_center/download"
       }
     ]
   }]
