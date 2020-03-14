@@ -5,6 +5,7 @@
 [Rule]
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT-TINYGIF
 URL-REGEX,https://api.bilibili.com/x/v2/dm/advert,REJECT-TINYGIF
+AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))),(NOT,((DOMAIN-SUFFIX,hdslb.com)))),REJECT-TINYGIF
 
 [MITM]
 hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com
@@ -17,7 +18,7 @@ http-response ^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/sho
 [Rule]
 USER-AGENT,AVOS*,REJECT-TINYGIF
 URL-REGEX,https://www.zhihu.com/api/v4/mcn/,REJECT-TINYGIF
-URL-REGEX,https://api.zhihu.com/(ab|adx|drama|fringe|zst|commercial|ad-style-service|market/popover|search/(top|tab|preset)|.*(guide|recommendations|extended|featured-comment-ad)),REJECT-TINYGIF
+URL-REGEX,https://api.zhihu.com/(ab|adx|xen|drama|fringe|zst|commercial|ad-style-service|market/popover|search/(top|tab|preset)|.*(guide|recommendations|extended|featured-comment-ad)),REJECT-TINYGIF
 AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com)))),REJECT-TINYGIF
 
 [MITM]
