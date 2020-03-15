@@ -27,21 +27,15 @@ hostname = www.zhihu.com, api.zhihu.com
 [Script]
 http-response ^https?:\/\/(api|www)\.zhihu\.com\/(moments(\/recommend)?\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people|appview\/(v2|p)\/(answer\/)?\d{1,10}\?no\_image\=false(\&article\_fixed\_bottom\=1)?\&X\-SUGER\=) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0
 ```
-Manly修图工具Unlock by 越南老哥
+Manly修图工具 & Bear笔记本 & Picsew截图
 ```
 [MITM]
 hostname = buy.itunes.apple.com
 
 [Script]
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Manly.js,script-update-interval=0
-```
-Bear笔记本Pro by 越南老哥
-```
-[MITM]
-hostname = buy.itunes.apple.com
-
-[Script]
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bear.js,script-update-interval=0
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Picsew.js,script-update-interval=0
 ```
 人人视频解锁原画+电影分区解锁
 ```
