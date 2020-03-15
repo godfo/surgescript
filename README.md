@@ -91,3 +91,11 @@ hostname = weibointl.api.weibo.cn, api.weibo.cn
 [Script]
 http-response ^https?:\/\/api\.weibo\.cn\/2\/(statuses|groups)\/(unread_hot_|friends_)?timeline requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/WeiboInt.js,script-update-interval=0
 ```
+Musixmatch会员解锁
+```
+[MITM]
+hostname = apic.musixmatch.com
+
+[Script]
+http-response ^https?:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Musixmatch.js,script-update-interval=0
+```
