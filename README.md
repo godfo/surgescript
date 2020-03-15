@@ -100,7 +100,7 @@ hostname = apic.musixmatch.com
 http-response ^https?:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Musixmatch.js,script-update-interval=0
 ```
 
-PicsArt/美易 app unlocks pro
+PicsArt/美易 app unlock
 ```
 [MITM]
 hostname = api.picsart.com, api.meiease.cn
@@ -108,7 +108,7 @@ hostname = api.picsart.com, api.meiease.cn
 [Script]
 http-response https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/PicsArt.js,script-update-interval=0
 ```
-PDF Expert Unlock pro
+PDF Expert Unlock
 ```
 [MITM]
 hostname = license.pdfexpert.com
