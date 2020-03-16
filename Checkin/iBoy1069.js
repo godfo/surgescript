@@ -28,7 +28,7 @@ $httpClient.get(bonus, function(error, response, data) {
     $done()
   } else {
     if (data.match(/已签到/)) {
-      $notification.post("iBoy1069签到", "", "每日签到成功🎉")
+      $notification.post("iBoy1069签到", "", "每日签到成功🎉 已获取今日金币奖励")
       $done()
     } else {
       if (data.match(/今日已签/)) {
