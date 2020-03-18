@@ -117,3 +117,11 @@ hostname = license.pdfexpert.com
 [Script]
 ^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Pdfexpert.js,script-update-interval=0
 ```
+Lensa人像修图解锁
+```
+[MITM]
+hostname = subscription-service.neuralprisma.com
+
+[Script]
+http-response ^https?:\/\/subscription-service\.neuralprisma\.com\/subscription_get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Lensa.js,script-update-interval=0
+```
