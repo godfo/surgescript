@@ -28,14 +28,14 @@ $httpClient.get(bonus, function(error, response, data) {
     $done()
   } else {
     if (data.match(/已签到/)) {
-      $notification.post("iBoy1069签到", "", "每日签到成功🎉 已获取今日金币奖励")
+      $notification.post("iBoy1069签到", "", "每日签到成功-已获取今日金币奖励 🎉")
       $done()
     } else {
       if (data.match(/今日已签/)) {
-        $notification.post("iBoy1069签到", "", "签到成功-重复签到 ⚠️")
+        $notification.post("iBoy1069签到", "", "每日签到成功-重复签到请明天再试哦 ⚠️")
         $done()
        } else {
-         $notification.post("iBoy1069签到", "", "签到失败重新获取Cookie ‼️‼️")
+         $notification.post("iBoy1069签到", "", "每日签到失败-重新获取Cookie ‼️‼️")
          $done()
        }
      }
