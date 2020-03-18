@@ -6,7 +6,7 @@ Reddit官方客户端去除时间线Promoted广告
 hostname = oauth.reddit.com
 
 [Script]
-http-response ^https?:\/\/oauth\.reddit\.com\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reddit.js,script-update-interval=0
+http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reddit.js,script-update-interval=0
 */
 
 var obj = JSON.parse($response.body); 
