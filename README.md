@@ -37,6 +37,9 @@ hostname = buy.itunes.apple.com
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Manly.js,script-update-interval=0
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bear.js,script-update-interval=0
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Picsew.js,script-update-interval=0
+
+ALL in One
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/verifyReceipt_allinone.js,script-update-interval=0
 ```
 人人视频解锁原画+电影分区解锁
 ```
@@ -44,7 +47,7 @@ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1
 hostname = api.rr.tv
 
 [Script]
-http-response ^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
+http-response ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
 ```
 WPS国内版/国际版 by eHpo1
 ```
@@ -79,7 +82,7 @@ Textnow去广告 by loric729
 hostname = api.textnow.me
 
 [Script]
-http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Textnow.js,script-update-interval=0
+http-response ^https?:\/\/api\.textnow\.me\/api2.0\/users\/.* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Textnow.js,script-update-interval=0
 ```
 微博国际版去除开屏广告及时间线广告 by hancj0528
 ```
@@ -115,7 +118,7 @@ PDF Expert Unlock
 hostname = license.pdfexpert.com
 
 [Script]
-^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Pdfexpert.js,script-update-interval=0
+http-response ^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Pdfexpert.js,script-update-interval=0
 ```
 Lensa人像修图解锁
 ```
