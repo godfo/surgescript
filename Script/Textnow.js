@@ -5,7 +5,7 @@ Textnow去广告
 hostname = api.textnow.me
 
 [Script]
-http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Textnow.js,script-update-interval=0
+http-response ^https?:\/\/api\.textnow\.me\/api2.0\/users\/.* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Textnow.js,script-update-interval=0
 */
 
 var obj = JSON.parse($response.body); 
