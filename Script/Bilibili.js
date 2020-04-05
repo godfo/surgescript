@@ -115,7 +115,7 @@ if (url.indexOf(path1) != -1) {
 }
 
 if (url.indexOf(path2) != -1) {
-  let blacklist = ['央视新闻','央视网快看','人民网','央视网','观察者网','央视频','新华社','共青团中央','广东共青团','浙江共青团','山东共青团','安徽共青团','河南共青团'];
+  let blacklist = ['央视','人民网','观察者网','新华社','共青团'];
   body.data.items = body.data.items.filter(function(item) {
     if (['ad_web_s', 'ad_web', 'live', 'banner', 'search_subscribe'].includes(item.card_goto)) {
       return false;
