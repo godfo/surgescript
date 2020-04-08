@@ -131,3 +131,12 @@ hostname = oauth.reddit.com
 
 [Script]
 http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reddit.js,script-update-interval=0
+
+```
+解锁白描黄金会员 （by LTribe）
+```
+[MITM]
+hostname = baimiao.uzero.cn
+
+[Script]
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Baimiao.js,script-update-interval=0
