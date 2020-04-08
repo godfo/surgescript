@@ -133,7 +133,7 @@ hostname = oauth.reddit.com
 http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reddit.js,script-update-interval=0
 
 ```
-解锁白描黄金会员 （by LTribe）
+解锁白描黄金会员 by LTribe
 ```
 [MITM]
 hostname = baimiao.uzero.cn
