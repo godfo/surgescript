@@ -1,5 +1,5 @@
-#!name=Surge Script Collections
-#!desc=TextNow MusixMatch PDFexpert PicsArt VSCO WPS Wechat verifyReceipt_allinone 115lx AdGuard
+#!name=Surge Unlock VIP Script Collections
+#!desc=TextNow MusixMatch PDFexpert PicsArt VSCO WPS verifyReceipt_allinone AdGuard
 #!system=ios
 
 [URL Rewrite]
@@ -12,11 +12,7 @@ Pdfexpert.js = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/a
 PicsArt.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/PicsArt.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json
 VSCO.js = type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,script-update-interval=0
 WPS.js = type=http-response,pattern=^https?:\/\/account\.wps\.(cn|com)\/api\/users,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
-Wechat.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com/mp/getappmsgad
 verifyReceipt_allinone.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/verifyReceipt_allinone.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt
-115lx.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/(webapi.|)115\.com\/(lx.*|user\/check_sign)
-Zhihu.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0,type=http-response,pattern="^https?:\/\/(api|www)\.zhihu\.com\/(moments(\/recommend)?\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people|appview\/(v2|p)\/(answer\/)?\d{1,10}\?no\_image\=false(\&article\_fixed\_bottom\=1)?\&X\-SUGER\=)"
-Bilibili.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Bilibili.js,script-update-interval=0,type=http-response,pattern=^https?:\/\/ap(i|p).(live.)?bilibili.com\/x(live)?\/(resource\/show\/tab|v2\/(reply\/main|view\/material|account\/(mine|teenagers\/status)|view|feed\/index|show\/popular\/index|rank)|app-room/v1/index/getInfoByRoom)\?access_key
 
 [MITM]
-hostname = %APPEND% buy.itunes.apple.com, api.textnow.me, webapi.115.com, mp.weixin.qq.com, vsco.co, license.pdfexpert.com, api.picsart.com, api.meiease.cn, apic.musixmatch.com, account.wps.com, mobile-api.adguard.com, www.zhihu.com, api.zhihu.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com
+hostname = %APPEND% buy.itunes.apple.com, api.textnow.me, vsco.co, license.pdfexpert.com, api.picsart.com, api.meiease.cn, apic.musixmatch.com, account.wps.com, mobile-api.adguard.com
