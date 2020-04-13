@@ -4,7 +4,7 @@
 
 [Replica]
 keyword-filter-type = whitelist
-keyword-filter = burn, chat/
+keyword-filter = burn, /chat
 
 [MITM]
 hostname = %APPEND% cdns.grindr.com, *burn-chatfiles.bldimg.com
