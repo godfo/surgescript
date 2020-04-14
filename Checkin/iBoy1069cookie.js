@@ -8,7 +8,7 @@ iboy1069.org header-replace Cookie "自己获取的签到的Cookie"
 hostname = iboy1069.org
 
 [Script]
-http-request ^https?:\/\/iboy1069\.org script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Checkin/iBoy1069cookie.js,script-update-interval=0
+http-request https:\/\/iboy1069\.org\/k_misign-sign.html script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Checkin/iBoy1069cookie.js,script-update-interval=0
 cron "0 0 7 * * *" script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Checkin/iBoy1069.js
 
 网页签到"qiandao"关键词，Cookie添加到header rewrite里，Header重写
