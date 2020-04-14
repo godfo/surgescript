@@ -1,8 +1,6 @@
 /*
 Bilibili简化去广告
 
-大会员Url Rewrite解锁Bot https://t.me/Biliiii_bot 为了防止解析地址被攻击，联系bot后自行添加规则咯
-
 [Rule]
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT-TINYGIF
 URL-REGEX,https://api.bilibili.com/x/v2/dm/advert,REJECT-TINYGIF
