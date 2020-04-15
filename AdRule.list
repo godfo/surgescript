@@ -93,19 +93,9 @@ DOMAIN-SUFFIX,wedolook.com
 DOMAIN-SUFFIX,xdrig.com
 DOMAIN-SUFFIX,yumimobi.com
 DOMAIN-SUFFIX,zu08e.cn
-DOMAIN,ad.12306.cn
-DOMAIN,ad.360in.com
-DOMAIN,ad.51wnl-cq.com
-DOMAIN,ad.wappalyzer.com
-DOMAIN,ad-cn.jovcloud.com
-DOMAIN,adextra.51wnl-cq.com
-DOMAIN,api.adnet.mob.com
-DOMAIN,ads.adadapted.com
-DOMAIN,adv.bandi.so
-DOMAIN,app-ad.variflight.com
-DOMAIN,appnext.hs.llnwd.net
-DOMAIN,appnext-a.akamaihd.net
 
+# > 12306
+DOMAIN,ad.12306.cn
 # > Alibaba
 DOMAIN,optimus-ads.amap.com
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com
@@ -121,8 +111,6 @@ DOMAIN,mobads-logs.baidu.com
 DOMAIN,nsclick.baidu.com
 # > ByteDance
 DOMAIN,ad.toutiao.com
-DOMAIN,xlog.snssdk.com
-DOMAIN-SUFFIX,temai.snssdk.com
 # > DirecTV
 USER-AGENT,*FreeWheelAdManager*
 # > Google
