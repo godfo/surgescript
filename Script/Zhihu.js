@@ -11,16 +11,16 @@ AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFI
 hostname = www.zhihu.com, api.zhihu.com
 
 [Script]
-http-response ^https?:\/\/(api|www)\.zhihu\.com\/(moments(\/recommend)?\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people|appview\/(v2|p)\/(answer\/)?\d{1,10}\?no\_image\=false(\&article\_fixed\_bottom\=1)?\&X\-SUGER\=) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0
+Zhihu.js = type=http-response,pattern= ^https:\/\/(api|lens|www)\.zhihu\.com\/(moments(\/recommend)?\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people|appview\/(v2|p)\/(answer\/)?\d+\?no\_image\=false(\&article\_fixed\_bottom\=1)?\&X\-SUGER\=|api\/videos\/\d+\/recommend),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0
 */
-
 const path1 = "/moments?";
 const path2 = "/topstory/recommend";
 const path3 = "/questions/";
 const path4 = "/market/header";
 const path5 = "/people";
 const path6 = "/moments/recommend?";
-const path7 = "/appview"
+const path7 = "/appview/"
+const path8 = "/api/videos/"
 
 let url = $request.url;
 let body = $response.body;
@@ -68,6 +68,10 @@ if ($request.method == "GET") {
 
     if (url.indexOf(path5) != -1) {
       delete body.mcn_user_info;
+    }
+
+    if (url.indexOf(path8) != -1) {
+      delete body.ad_info;
     }
 
     body = JSON.stringify(body);
