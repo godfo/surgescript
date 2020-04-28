@@ -40,18 +40,10 @@ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1
 ALL in One
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/verifyReceipt_allinone.js,script-update-interval=0
 ```
-人人视频解锁原画+电影分区解锁
-```
-[MITM]
-hostname = api.rr.tv
-
-[Script]
-http-response ^https?:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Rrtv.js,script-update-interval=0
-```
 WPS国内版/国际版 by eHpo1
 ```
 [MITM]
-hostname = account.wps.co, account.wps.cn
+hostname = account.wps.com, account.wps.cn
 
 [Script]
 http-response ^https?:\/\/account\.wps\.(cn|com)\/api\/users requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Wps.js,script-update-interval=0
@@ -98,7 +90,6 @@ hostname = apic.musixmatch.com
 [Script]
 http-response ^https?:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Musixmatch.js,script-update-interval=0
 ```
-
 PicsArt/美易 app unlock
 ```
 [MITM]
@@ -122,16 +113,6 @@ hostname = subscription-service.neuralprisma.com
 
 [Script]
 http-response ^https?:\/\/subscription-service\.neuralprisma\.com\/subscription_get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Lensa.js,script-update-interval=0
-```
-
-Reddit官方客户端去除时间线Promoted广告
-```
-[MITM]
-hostname = oauth.reddit.com
-
-[Script]
-http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reddit.js,script-update-interval=0
-
 ```
 解锁白描黄金会员 by LTribe
 ```
