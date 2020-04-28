@@ -27,7 +27,6 @@ hostname = www.zhihu.com, api.zhihu.com
 http-response ^https?:\/\/(api|www)\.zhihu\.com\/(moments(\/recommend)?\?(action|feed_type)|topstory\/recommend|.*\/questions|market\/header|people|appview\/(v2|p)\/(answer\/)?\d{1,10}\?no\_image\=false(\&article\_fixed\_bottom\=1)?\&X\-SUGER\=) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Zhihu.js,script-update-interval=0
 ```
 Manly修图工具 & Bear笔记本 & Picsew截图
-(Bear和Picsew只需一次可注释脚本，失效则重新运行一次脚本即可。Manly每次启动都会验证所以要一直开，几个脚本会有冲突哦，不注释掉不用的就默认运行排序最上的那个)
 ```
 [MITM]
 hostname = buy.itunes.apple.com
@@ -63,7 +62,7 @@ http-response ^https?:\/\/(webapi.|)115\.com\/(lx.*|user\/check_sign) requires-b
 [Script]
 http-request ^http:\/\/.*\.115\.com\/.*\.m3u8.*$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115tonplayer.js,script-update-interval=0
 ```
-Textnow去广告 by loric729
+Textnow去广告
 ```
 [MITM]
 hostname = api.textnow.me
