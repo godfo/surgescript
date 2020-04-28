@@ -19,7 +19,7 @@ if (bundle_id == "com.sugarmo.ScrollClip") {
     "bundle_id": "com.sugarmo.ScrollClip",
     "in_app": [
       {
-        "product_id": "com.sugarmo.ScrollClip.freeUpgrade",
+        "product_id": "com.sugarmo.ScrollClip.proUpgrade",
         "quantity": "1",
         "transaction_id": "470000537586926",
         "purchase_date_ms": "1575271039000",
