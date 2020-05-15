@@ -2,8 +2,7 @@
 Bilibili简化去广告
 
 [Rule]
-URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT-TINYGIF
-URL-REGEX,https://api.bilibili.com/x/v2/dm/advert,REJECT-TINYGIF
+URL-REGEX,^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/season\/rank\/cn|x\/v2\/(dm\/ad|rank.*rid=(168|5)|dataflow\/report|search\/(defaultword|trending|recommend|resource)|splash)),REJECT
 
 [MITM]
 hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com
