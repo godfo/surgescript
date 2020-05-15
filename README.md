@@ -1,10 +1,9 @@
 # 自用Surge Scripts
 
-哔哩哔哩APP去广告简化 by onewayticket255 & primovist
+哔哩哔哩APP去广告简化 by primovist
 ```
 [Rule]
-URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT-TINYGIF
-URL-REGEX,https://api.bilibili.com/x/v2/dm/advert,REJECT-TINYGIF
+URL-REGEX,^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/season\/rank\/cn|x\/v2\/(dm\/ad|rank.*rid=(168|5)|dataflow\/report|search\/(defaultword|trending|recommend|resource)|splash)),REJECT
 
 [MITM]
 hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com
