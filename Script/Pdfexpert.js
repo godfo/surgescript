@@ -5,7 +5,7 @@ PDF Expert Unlock
 hostname = license.pdfexpert.com
 
 [Script]
-http-response ^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Pdfexpert.js,script-update-interval=0
+Pdfexpert.js = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Pdfexpert.js,script-update-interval=0
 */
 
 var obj= {
