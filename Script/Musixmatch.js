@@ -5,7 +5,7 @@ Musixmatch unlock vip
 hostname = apic.musixmatch.com
 
 [Script]
-http-response ^https?:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Musixmatch.js,script-update-interval=0
+Musixmatch.js = type=http-response,pattern=^https?:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Musixmatch.js,script-update-interval=0
 */
 
 let obj=JSON.parse($response.body);
