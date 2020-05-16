@@ -1,5 +1,5 @@
 #!name=APPs Customized
-#!desc=Wechat ADs & 115 Offline Download
+#!desc=Wechat Ads 115lx Blued BurnPics & ZhiHu UA
 #!system=ios
 
 [URL Rewrite]
@@ -11,6 +11,7 @@
 [Script]
 Wechat.js = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com/mp/getappmsgad,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0
 115lx.js = type=http-response,pattern=^https?:\/\/(webapi.|)115\.com\/(lx.*|user\/check_sign),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
+Blued.js = type=http-request,pattern=https:\/\/.*burn-chatfiles\.bldimg\.com\/,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Blued.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% webapi.115.com, mp.weixin.qq.com, www.zhihu.com
+hostname = %APPEND% webapi.115.com, mp.weixin.qq.com, *burn-chatfiles.bldimg.com, www.zhihu.com
