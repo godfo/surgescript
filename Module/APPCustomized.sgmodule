@@ -6,7 +6,8 @@
 ^http:\/\/115\.com\/\?ct=sign$ http://115.com/lx?taskdg=1 header
 
 [Header Rewrite]
-^https?:\/\/www\.zhihu\.com\/ header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1 Safari/605.1.15
+
+^https?://www.zhihu.com/question/ header-replace User-Agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.45 Safari/537.36
 
 [Script]
 Wechat.js = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com/mp/getappmsgad,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js,script-update-interval=0
