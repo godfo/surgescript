@@ -3,7 +3,7 @@ Reface Unlock
 [MITM]
 hostname = api.reface.video
 [Script]
-Reface.js = type=http-response,pattern=^https?:\/\/api\.reface\.video\/api\/reface\/v1\/get-public-key$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reface.js,script-update-interval=0
+Reface.js = type=http-response,pattern=^https?:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reface.js,script-update-interval=0
 */
 
 var obj = JSON.parse($response.body);
