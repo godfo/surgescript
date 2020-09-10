@@ -3,6 +3,8 @@
 #!system=ios
 
 [Script]
+
+Reface.js = type=http-response,pattern=^https?:\/\/api\.reface\.video\/api\/reface\/v1\/get-public-key$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reface.js,script-update-interval=0
 Textnow.js = type=http-response,pattern=^https?:\/\/api\.textnow\.me\/api2.0\/users\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Textnow.js,script-update-interval=0
 Musixmatch.js = type=http-response,pattern=^https?:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Musixmatch.js,script-update-interval=0
 Pdfexpert.js = type=http-response,pattern=^https?:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Pdfexpert.js,script-update-interval=0
@@ -11,4 +13,4 @@ AdGuard.js = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.com\/api
 verifyReceipt_allinone.js = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/verifyReceipt_allinone.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% buy.itunes.apple.com, api.textnow.me, license.pdfexpert.com, api.picsart.com, api.meiease.cn, apic.musixmatch.com, mobile-api.adguard.com
+hostname = %APPEND% buy.itunes.apple.com, api.textnow.me, license.pdfexpert.com, api.picsart.com, api.meiease.cn, apic.musixmatch.com, mobile-api.adguard.com, api.reface.video
