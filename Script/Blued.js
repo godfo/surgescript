@@ -10,10 +10,10 @@ var url =$request.url;
 let headers = $request.headers;
 async function launch (){
     if(headers['User-Agent'].indexOf("Blued")!=-1){
-        $notification.post('🐔捕获到闪照','下滑查看',url);
+        $notification.post('🐔捕获到闪照❗','👇下滑查看',url);
     }
      if(headers['User-Agent'].indexOf("Media")!=-1){
-        $notification.post('🐔捕获到闪拍','下滑查看',url);
+        $notification.post('🐔捕获到闪拍❗','👇下滑查看',url);
     }
     $done();
 }
