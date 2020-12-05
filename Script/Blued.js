@@ -9,8 +9,8 @@ Blued.js = type=http-request,pattern=https:\/\/.*burn-chatfiles\.bldimg\.com\/,s
 var url =$request.url;
 let headers = $request.headers;
 async function launch (){
-    if(headers['User-Agent'].indexOf("Blued")!=-1){
-        $notification.post('捕获到闪照','重按通知查看',url);
+    if(headers['User-Agent'].indexOf("Blued"|"AppleCoreMedia")!=-1){
+        $notification.post('捕获到阅后即焚','长按查看',url);
     }
     $done();
 }
