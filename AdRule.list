@@ -297,6 +297,7 @@ DOMAIN,mobads-logs.baidu.com
 DOMAIN,nsclick.baidu.com
 # > ByteDance
 DOMAIN,ad.toutiao.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
 URL-REGEX,^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/
 URL-REGEX,^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/
 URL-REGEX,^https?:\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/
