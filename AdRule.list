@@ -1,5 +1,4 @@
 # > General
-
 DOMAIN-KEYWORD,adservice
 
 DOMAIN-SUFFIX,1phads.com
@@ -130,6 +129,7 @@ DOMAIN-SUFFIX,brightcom.com
 DOMAIN-SUFFIX,bulldogcpi.com
 DOMAIN-SUFFIX,bxsnews.com
 DOMAIN-SUFFIX,carbonads.net
+DOMAIN-SUFFIX,cdj99d.cn
 DOMAIN-SUFFIX,clotfun.mobi
 DOMAIN-SUFFIX,clotfun.online
 DOMAIN-SUFFIX,cloudmobi.net
@@ -200,8 +200,6 @@ DOMAIN-SUFFIX,teads.tv
 DOMAIN-SUFFIX,trafficjunky.net
 DOMAIN-SUFFIX,trvdp.com
 DOMAIN-SUFFIX,turn.com
-DOMAIN-SUFFIX,unityads.unitychina.cn
-DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN-SUFFIX,uri6.com
 DOMAIN-SUFFIX,vidoomy.com
 DOMAIN-SUFFIX,vungle.com
@@ -232,61 +230,28 @@ DOMAIN-SUFFIX,yunqingugm.com
 DOMAIN-SUFFIX,zapr.in
 DOMAIN-SUFFIX,zemanta.com
 DOMAIN-SUFFIX,zestads.com
-DOMAIN-SUFFIX,zhiziyun.com
-DOMAIN-SUFFIX,zu08e.cn
 DOMAIN-SUFFIX,zucks.co.jp
 DOMAIN-SUFFIX,zucks.net
 DOMAIN-SUFFIX,zumobi.com
-DOMAIN-SUFFIX,ad.cmvideo.cn
-DOMAIN-SUFFIX,ad.daum.net
-DOMAIN-SUFFIX,aiseet.atianqi.com
 
-DOMAIN,abema-adx.ameba.jp
 DOMAIN,ad.12306.cn
 DOMAIN,ad.caiyunapp.com
 DOMAIN,ad.flurry.com
-DOMAIN,ad.huajiao.com
 DOMAIN,ad.hzyoka.com
-DOMAIN,ad.jiemian.com
-DOMAIN,ad.toutiao.com
 DOMAIN,ad.wappalyzer.com
-DOMAIN,ad-cn.jovcloud.com
 DOMAIN,ads.adadapted.com
-DOMAIN,ads.chinadaily.com.cn
-DOMAIN,ads.daydaycook.com.cn
 DOMAIN,ads.flurry.com
-DOMAIN,ads.weilitoutiao.net
-DOMAIN,adsapi.manhuaren.com
-DOMAIN,adsdk.dmzj.com
-DOMAIN,adserver.pandora.com
-DOMAIN,adshow.58.com
-DOMAIN,adui.tg.meitu.com
-DOMAIN,adv.bandi.so
-DOMAIN,adv.ettoday.net
 DOMAIN,api.adnet.mob.com
-DOMAIN,api-ad.kajicam.com
-DOMAIN,app-ad.variflight.com
 DOMAIN,appnext.hs.llnwd.net
 DOMAIN,appnext-a.akamaihd.net
-DOMAIN,business-cdn.shouji.sogou.com
 DOMAIN,g.ousns.net
-DOMAIN,ggs.myzaker.com
-DOMAIN,ggx.cmvideo.cn
-DOMAIN,itad.linetv.tw
-DOMAIN,ma-adx.ctrip.com
-DOMAIN,mads.suning.com
 DOMAIN,mobileads.msn.com
 DOMAIN,mopnativeadv.037201.com
-DOMAIN,nativeadv.dftoutiao.com
 DOMAIN,toots-a.akamaihd.net
 
-# > 12306
-DOMAIN,ad.12306.cn
 # > Alibaba
-DOMAIN,optimus-ads.amap.com
-DOMAIN,optimus-ads.amap.com.w.alikunlun.com
 DOMAIN,tunion-api.m.taobao.com
-DOMAIN,h-adashx.ut.taobao.com
+
 # > Baidu
 DOMAIN-SUFFIX,cpro.baidu.com
 DOMAIN-SUFFIX,pos.baidu.com
@@ -296,21 +261,51 @@ DOMAIN,duclick.baidu.com
 DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
 DOMAIN,nsclick.baidu.com
+
 # > ByteDance
-DOMAIN,toblog.ctobsnssdk.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN,ad.toutiao.com
+DOMAIN,toblog.ctobsnssdk.com
+DOMAIN,pangolin.snssdk.com
 URL-REGEX,^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/
-URL-REGEX,^https?:\/\/[\w-]+\.snssdk\.com\/.+_ad\/
-URL-REGEX,^https?:\/\/[\w-]+\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/
+
 # > DirecTV
 USER-AGENT,*FreeWheelAdManager*
+
 # > Google
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN,ads.youtube.com
+
+# > HappyCast
+DOMAIN,ad.hpplay.cn
+DOMAIN,adc.hpplay.cn
+DOMAIN,adcdn.hpplay.cn
+DOMAIN,adeng.hpplay.cn
+DOMAIN,rp.hpplay.cn
+DOMAIN,rpt.hpplay.cn
+
+# > Sina
+DOMAIN-SUFFIX,beacon.sina.com.cn
+DOMAIN,adimg.uve.weibo.com
+DOMAIN,adimg.vue.weibo.com
+DOMAIN,u1.img.mobile.sina.cn
+DOMAIN,sax.sina.com.cn
+DOMAIN,saxs.sina.com.cn
+DOMAIN,saxn.sina.com.cn
+
+# > SOHU
+DOMAIN-SUFFIX,ad.sohu.com
+DOMAIN-SUFFIX,ads.sohu.com
+DOMAIN-SUFFIX,aty.sohu.com
+DOMAIN,imp.optaim.com
+DOMAIN,v2.reachmax.cn
+DOMAIN,hui.sohu.com
+
 # > Tencent
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
@@ -325,3 +320,13 @@ DOMAIN,splashqqlive.gtimg.com
 DOMAIN,wa.gtimg.com
 DOMAIN,wxsnsdy.wxs.qq.com
 DOMAIN,wxsnsdythumb.wxs.qq.com
+
+# > Yahoo
+DOMAIN-SUFFIX,adserver.yahoo.com
+DOMAIN-SUFFIX,adspecs.yahoo.com
+DOMAIN-SUFFIX,advertising.yahoo.com
+DOMAIN-SUFFIX,gemini.yahoo.com
+DOMAIN,admarketing.yahoo.net
+DOMAIN,ads.auctions.yahoo.com
+DOMAIN,ads.finance.yahoo.com
+DOMAIN,ads.yahoo.com
