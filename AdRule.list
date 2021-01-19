@@ -270,9 +270,6 @@ DOMAIN,toblog.ctobsnssdk.com
 DOMAIN,pangolin.snssdk.com
 URL-REGEX,^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/
 
-# > DirecTV
-USER-AGENT,*FreeWheelAdManager*
-
 # > Google
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,googleadservices.com
