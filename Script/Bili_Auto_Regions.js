@@ -12,7 +12,7 @@ hostname = app.bilibili.com, api.bilibili.com
 */
 
 const Group = '🍻Bilibili'; //Your blibli policy group name.
-const CN = 'DIRECT'; //Your China sub-policy name.
+const CN = '🚀Direct'; //Your China sub-policy name.
 const TW = '🇹🇼TW'; //Your Taiwan sub-policy name.
 const HK = '🇭🇰HK'; //Your HongKong sub-policy name.
 
