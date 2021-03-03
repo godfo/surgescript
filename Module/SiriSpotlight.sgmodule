@@ -7,4 +7,4 @@
 (?<=country_code=)CN(?=&) US 307
 
 [MITM]
-hostname = %APPEND% api-glb-apse1c.smoot.apple.com, api-glb-apne1d.smoot.apple.com, gspe35-ssl.ls.apple.com
+hostname = %APPEND% api-glb-ap*.smoot.apple.com, gspe35-ssl.ls.apple.com
