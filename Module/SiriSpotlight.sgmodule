@@ -1,0 +1,10 @@
+#!name=SiriSpotlight
+#!desc=iOS Siri Spotlight Region Unlock
+#!system=ios
+
+[URL Rewrite]
+(?<=cc=)CN(?=&) US 307
+(?<=country_code=)CN(?=&) US 307
+
+[MITM]
+hostname = %APPEND% api-glb-apse1c.smoot.apple.com, api-glb-apne1d.smoot.apple.com, gspe35-ssl.ls.apple.com
