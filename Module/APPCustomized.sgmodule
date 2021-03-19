@@ -11,7 +11,6 @@ Bilibili番剧区域 = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.
 Blued闪照 = type=http-request,pattern=https:\/\/.*burn-chatfiles\.bldimg\.com\/,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Blued.js,script-update-interval=0
 PicsArt = type=http-response,pattern=^https?:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/PicsArt.js,script-update-interval=0
 AdGuard = type=http-response,pattern=^https:\/\/mobile-api\.adguard\.com\/api\/1\.0\/ios_validate_receipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/AdGuard.js,script-update-interval=0
-Reface = type=http-response,pattern=^https?:\/\/api\.reface\.video\/api\/reface\/v1\/iosSubscription$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/Reface.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com, *burn-chatfiles.bldimg.com, api.picsart.com, api.meiease.cn, mobile-api.adguard.com, api.reface.video, app.bilibili.com, api.bilibili.com
+hostname = %APPEND% mp.weixin.qq.com, *burn-chatfiles.bldimg.com, api.picsart.com, api.meiease.cn, mobile-api.adguard.com, app.bilibili.com, api.bilibili.com
