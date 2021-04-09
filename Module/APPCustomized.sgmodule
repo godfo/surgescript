@@ -4,6 +4,7 @@
 
 [Rule]
 URL-REGEX,^https?://mp.weixin.qq.com/mp/getappmsgad,REJECT
+URL-REGEX,^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/,REJECT
 
 [Script]
 115离线 = type=http-response,pattern=^http:\/\/115\.com\/lx.*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wubulaba/surgescript/master/Script/115lx.js,script-update-interval=0
