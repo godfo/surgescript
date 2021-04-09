@@ -1,5 +1,7 @@
 # Advertising
 # > General
+DOMAIN-KEYWORD,adservice
+
 DOMAIN-SUFFIX,1phads.com
 DOMAIN-SUFFIX,1rtb.com
 DOMAIN-SUFFIX,1xl.co.uk
@@ -444,23 +446,6 @@ DOMAIN,adeng.hpplay.cn
 DOMAIN,rp.hpplay.cn
 DOMAIN,rpt.hpplay.cn
 
-# > Sina
-DOMAIN-SUFFIX,beacon.sina.com.cn
-DOMAIN,adimg.uve.weibo.com
-DOMAIN,adimg.vue.weibo.com
-DOMAIN,u1.img.mobile.sina.cn
-DOMAIN,sax.sina.com.cn
-DOMAIN,saxs.sina.com.cn
-DOMAIN,saxn.sina.com.cn
-
-# > SOHU
-DOMAIN-SUFFIX,ad.sohu.com
-DOMAIN-SUFFIX,ads.sohu.com
-DOMAIN-SUFFIX,aty.sohu.com
-DOMAIN,imp.optaim.com
-DOMAIN,v2.reachmax.cn
-DOMAIN,hui.sohu.com
-
 # > Tencent
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
@@ -475,13 +460,3 @@ DOMAIN,splashqqlive.gtimg.com
 DOMAIN,wa.gtimg.com
 DOMAIN,wxsnsdy.wxs.qq.com
 DOMAIN,wxsnsdythumb.wxs.qq.com
-
-# > Yahoo
-DOMAIN-SUFFIX,adserver.yahoo.com
-DOMAIN-SUFFIX,adspecs.yahoo.com
-DOMAIN-SUFFIX,advertising.yahoo.com
-DOMAIN-SUFFIX,gemini.yahoo.com
-DOMAIN,admarketing.yahoo.net
-DOMAIN,ads.auctions.yahoo.com
-DOMAIN,ads.finance.yahoo.com
-DOMAIN,ads.yahoo.com
